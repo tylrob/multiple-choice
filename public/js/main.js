@@ -1,13 +1,11 @@
-//Adding a comment to test git.
-
 //Models
 var QuizList = Backbone.NestedModel.extend({
-	urlRoot: 'http://localhost:3000/quizzes'
+	urlRoot: 'https://multiple-choice.herokuapp.com/quizzes'
 });
 
 var Attempt = Backbone.NestedModel.extend({
 	idAttribute: "_id",
-	urlRoot: 'http://localhost:3000/quiz-attempts'
+	urlRoot: 'https://multiple-choice.herokuapp.com/quiz-attempts'
 });
 
 var Score = Backbone.Model.extend({
