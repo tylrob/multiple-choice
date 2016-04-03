@@ -1,0 +1,88 @@
+{
+  "quizName": "American History Quiz",
+  "quizId": 0,
+  "questions": [
+    {
+      "questionId": 1,  
+      "questionText": "Who was the first President of the United States?",
+      "choices": [
+        "Thomas Jefferson",
+        "George Washington",
+        "John Adams",
+        "Alexander Hamilton"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "questionId": 2,
+      "questionText": "What year was the Declaration of Independence signed?",
+      "choices": [
+        "1774",
+        "1775",
+        "1776",
+        "1777"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "questionId": 3,
+      "questionText": "Who was the ruler of England during the Revolutionary War?",
+      "choices": [
+        "Henry VIII",
+        "Edward II",
+        "George III",
+        "Elizabeth I",
+        "Elizabeth II"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "questionId": 4,
+      "questionText": "What is the last word of the national anthem?",
+      "choices": [
+        "Knave",
+        "Brave",
+        "Cave"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}
+{
+  "quizName": "London Landmarks Quiz",
+  "quizId": 1,
+  "questions": [
+    {
+      "questionId": 1,
+      "questionText": "Where are the Crown Jewels held?",
+      "choices": [
+        "Buckingham Palace",
+        "St. Paul's Cathedral",
+        "Westminster Abbey",
+        "Tower of London"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "questionId": 2,
+      "questionText": "Where is Platform 9 3/4?",
+      "choices": [
+        "Kings Cross",
+        "Euston",
+        "Marylebone",
+        "Dorridge"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "questionId": 3,
+      "questionText": "What major river passes through London?",
+      "choices": [
+        "Rhine",
+        "Niles",
+        "Thames"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+}

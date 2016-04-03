@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Backbone Sandbox</title>
+	</head>
+	<body>
+		<div id="perm"><p>Some permanent content here</p></div>
+		<div id="content"></div>
+
+	<!-- Template for each nested model question. -->
+		<script type="text/template" id="nested-question-view">
+			<h4><%= questionId %>. <%= questionText %></h4>
+			<% _.each(choices, function(choice){ %>
+				<input type="radio" name="<%= questionId %>" value="<%= choice %>" <% if (typeof userChoice !== 'undefined' && userChoice == choice) { print("checked") } %>> <%= choice %> <br>
+			<% }); %>
+			<br>
+			<button type="button" id="prev" <% if (currentQuestion <= 0) { print("disabled") } %>>Previous</button>
+			<button type="button" id="next"><% if (currentQuestion >= countOfQuestions - 1) { print("Finish!") } else { print("Next") } %></button>
+			<br>
+			<br>
+			<button type="button" id="home">Home</button>
+		</script>
+
+	<!-- Template for quiz welcome/landing screen. -->
+		<script type="text/template" id="quiz-welcome">
+			<h2>Welcome to the landing page of my quiz application!</h2>
+			<p>From this page, you can choose which quiz you want to take.</p>
+			<p>The list of buttons below is generated using the quizzes that exist in the 'quizzes' collection in the database.</p>
+			<% _.each(quizzes, function(quiz){ %>
+				<p><input type="button" onclick="app.newAttempt(<%= quiz.quizId %>)" value="<%= quiz.quizName %>" /></p>
+			<% }); %>
+			<p>End of list</p>
+		</script>
+
+	<!-- Template for quiz scoring screen. -->
+		<script type="text/template" id="calculate-score">
+			<h3>How'd you do?</h3>
+			<h2>You got <%= countCorrect %> out of <%= questionCount %> questions right.</h2>
+			<button id="home" type="button">Home</button>
+		</script>
+
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript" src="/js/underscore.js"></script>
+		<script type="text/javascript" src="/js/backbone.js"></script>
+		<script type="text/javascript" src="/js/backbone-nested.js"></script>
+		<script type="text/javascript" src="/js/main.js"></script>
+	
+	</body>
+</html>
