@@ -13,10 +13,15 @@ app.listen(3000, function () {
 	console.log('Listening on port 3000.');
 });
 
+/*
 MongoClient.connect('mongodb://127.0.0.1:27017/multiple-choice', function(err, db) {
 	assert.equal(null, err);
     console.log("Successfully connected to MongoDB.");
     this.db = db;
+}); */
+
+app.get('/', function (req, res) {
+	res.send("I'm alive");
 });
 
 /*
