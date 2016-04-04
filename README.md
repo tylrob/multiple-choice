@@ -6,9 +6,13 @@ An application that allows users to take multiple-choice quizzes.
 - When a user begins a quiz, it creates a new Attempt document in MongoDB. You will see the `_id` assigned by MongoDB in the URL.
 - Each time the user clicks Prev or Next, the Attempt will be synced to MongoDB.
 
+## Demo
+
+I've deployed the application on Heroku [here](https://multiple-choice.herokuapp.com).
+
 ## Installation 
 
-Download the repository. To populate the two sample quizzes into your local MongoDB instance, run:
+If you prefer to run the application locally, download the repository. To populate the two sample quizzes into your local MongoDB instance, run:
 
 `mongoimport --db multiple-choice --collection quizzes --file quizzes-import.json`.
 
