@@ -8,7 +8,7 @@ An application that allows users to take multiple-choice quizzes.
 
 ## Demo
 
-I've deployed the application on Heroku [here](https://multiple-choice.herokuapp.com).
+I've deployed the application on the free version of Heroku [here](https://multiple-choice.herokuapp.com). It will take a few seconds to spin up the app since it's the free version, but it should run normally once the server is awake.
 
 ## Installation 
 
