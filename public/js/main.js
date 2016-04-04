@@ -1,11 +1,13 @@
 //Models
 var QuizList = Backbone.NestedModel.extend({
-	urlRoot: 'https://multiple-choice.herokuapp.com/quizzes'
+	urlRoot: '/quizzes'
+	//urlRoot: 'https://multiple-choice.herokuapp.com/quizzes'
 });
 
 var Attempt = Backbone.NestedModel.extend({
 	idAttribute: "_id",
-	urlRoot: 'https://multiple-choice.herokuapp.com/quiz-attempts'
+	urlRoot: '/quiz-attempts'
+	//urlRoot: 'https://multiple-choice.herokuapp.com/quiz-attempts'
 });
 
 var Score = Backbone.Model.extend({

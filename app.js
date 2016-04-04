@@ -6,7 +6,7 @@ var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectId;
 var assert = require('assert');
 var bodyParser = require('body-parser');
-var uri = process.env.MONGOLAB_URI;
+var uri = process.env.MONGOLAB_URI || process.env.LOCAL_URI || 'mongodb://127.0.0.1:27017/multiple-choice';
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
