@@ -20,6 +20,9 @@
   },
   "author": "Tyler Robinson",
   "license": "ISC",
+  "engines": {
+    "node": "8.1.4"
+  },
   "bugs": {
     "url": "https://github.com/tylrob/multiple-choice/issues"
   },
